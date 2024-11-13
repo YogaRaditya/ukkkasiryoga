@@ -1,0 +1,191 @@
+
+
+/* Menetapkan header tetap di atas */
+.header {
+    position: fixed;   /* Menjaga header tetap di atas */
+    top: 0;             /* Menempel pada bagian atas viewport */
+    left: 0;            /* Menempel pada sisi kiri */
+    width: 100%;        /* Lebar header mengisi seluruh layar */
+    z-index: 1000;      /* Memastikan header tetap berada di atas konten lainnya */
+}
+
+/* Memberikan ruang ekstra di bawah header untuk konten yang tidak tertutup */
+.body {
+    padding-top: 120px;  /* Sesuaikan dengan tinggi header Anda (120px untuk header yang lebih besar) */
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f8fc; /* Warna latar belakang yang lebih terang */
+    color: #333;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff; /* Warna biru tua */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-title p {
+    font-size: 16px;
+    color: #007bff; /* Warna biru muda */
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  /* Info Container */
+  .info-container {
+    background-color: #e3f2fd; /* Warna biru terang sebagai latar belakang */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .info-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .info-item i {
+    display: flex;
+    font-size: 24px;
+    color: #007bff; /* Warna biru pada ikon */
+    margin-right: 15px;
+  }
+  
+  .info-item h3 {
+    display: flex;
+    font-size: 18px;
+    color: #007bff; /* Warna biru tua pada judul */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Contact Form Styles */
+  .php-email-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .php-email-form input[type="text"],
+  .php-email-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c4d6f7; /* Border warna biru terang */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .php-email-form input[type="text"]:focus,
+  .php-email-form input[type="email"]:focus {
+    border-color: #007bff; /* Border berwarna biru tua saat fokus */
+    outline: none;
+  }
+  
+  .php-email-form .btn {
+    padding: 12px 30px;
+    background-color: #007bff; /* Tombol berwarna biru tua */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .php-email-form .btn:hover {
+    background-color: #1565c0; /* Biru sedikit lebih gelap saat hover */
+  }
+  
+  .php-email-form .loading,
+  .php-email-form .error-message,
+  .php-email-form .sent-message {
+    display: none;
+  }
+  
+  .php-email-form .sent-message.active {
+    display: block;
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .php-email-form .error-message.active {
+    display: block;
+    color: #dc3545;
+    font-size: 16px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title h2 {
+      font-size: 28px;
+    }
+  
+    .info-container {
+      padding: 20px;
+    }
+  
+    .info-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .info-item i {
+      margin-bottom: 10px;
+    }
+  
+    .col-lg-4, .col-lg-8 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .php-email-form input[type="text"],
+    .php-email-form input[type="email"] {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .php-email-form .btn {
+      width: 100%;
+      padding: 14px;
+    }
+  }
+  
